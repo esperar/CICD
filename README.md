@@ -18,5 +18,8 @@ CI를 기반으로 코드 변경사항이 자동으로 테스트 및 빌드된 �
 ### 필요한 이유
 CD를 통해 새로운 기능 또는 버그 수정 등의 변경사항이 신속하게 고객에게 전달될 수 있다.
   
+<br/>
+
+## Spring Boot CD Architecture
 
 ![](./assets/img/SPRINGCD.png)
