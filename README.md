@@ -23,3 +23,19 @@ CD를 통해 새로운 기능 또는 버그 수정 등의 변경사항이 신속
 ## Spring Boot CD Architecture
 
 ![](./assets/img/SPRINGCD.png)
+
+<br/>
+
+## EC2 Spring boot
+
+EC2를 생성해 ssh key를 github와 연결하여 ssh 깃허브 리퍼지토리를 클론
+  
+`sudo dnf install java-11-amazon-corretto -y`로 jdk 설치
+  
+그 후 spring boot 프로젝트 디렉터리에서 ./gradlew build로 빌드 파일 생성
+
+cd build/libs로 이동후 `nohup java -jar cicd-0.0.1-SNAPSHOT.jar &`
+  
+`cat nohup.out` 실행 확인
+
+![](./assets/img/ec2.png)
