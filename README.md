@@ -39,3 +39,14 @@ cd build/libs로 이동후 `nohup java -jar cicd-0.0.1-SNAPSHOT.jar &`
 `cat nohup.out` 실행 확인
 
 ![](./assets/img/ec2.png)
+
+## CD
+
+- GitHub Action
+- AWS CodeDeploy를 사용해 CD를 구성했다.
+
+GitHub Action과 CodeDeploy를 사용한다면 가장 큰 장점은 아무래도 간편하다이지 않을까 싶다.
+
+가장 우리에게 익숙하기 때문이다. 코드 배포 구성을 위한 yml 파일을 작성함으로써 더욱 간편하게 배포를 구성할 수 있다.
+
+깃액션에서는 배포 상태 및 이력을 시각화해 표시할 수 있기 때문에 이를 통해 문제가 발생한 경우 신속하게 대응할 수 있다.
